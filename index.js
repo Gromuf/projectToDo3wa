@@ -35,4 +35,8 @@ function saveState() {
 function display() {
     listContainer.innerHTML = localStorage.getItem("state")
 }
+function resetApp() {
+    listContainer.innerHTML = ""
+    saveState()
+}
 display()
