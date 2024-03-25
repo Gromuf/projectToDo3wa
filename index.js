@@ -8,6 +8,7 @@ function addTodo() {
         const span = document.createElement("span")
         span.innerHTML = "x"
         li.appendChild(span)
+        saveState()
     }
     todo.value = ""
 }
